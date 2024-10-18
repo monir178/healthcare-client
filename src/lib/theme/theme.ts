@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles';
-import { green, blue } from '@mui/material/colors';
+import { green, blue, grey } from '@mui/material/colors';
 
 export const theme = createTheme({
     palette: {
@@ -9,10 +9,7 @@ export const theme = createTheme({
         secondary: {
             main: blue[500],
         },
-        background: {
-            default: '#F5F5F5',
-            paper: '#FFFFFF',
-        },
+
     },
 
     components: {
@@ -24,15 +21,23 @@ export const theme = createTheme({
                 root: {
                     padding: '8px 24px',
                     borderRadius: '8px',
-                    color: '#FFFFFF',
+
+                },
+                contained: {
+                    color: '#ffffff',
+                },
+                outlined: {
+                    color: green[600],
+
                 },
             },
         },
         MuiContainer: {
             defaultProps: {
-                maxWidth: 'xl',
+                maxWidth: 'lg',
             }
-        }
+        },
+
     },
 
     typography: {
